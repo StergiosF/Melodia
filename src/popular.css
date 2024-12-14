@@ -2,55 +2,11 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.45),
-      rgba(240, 46, 170, 0.15)
-    ),
-    url("/images/danny-howe-bn-D2bCvpik-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 /* NAVIGATION */
-
 .container {
   height: 100%;
   position: relative;
   padding: 2rem;
-}
-
-.fade-side-left {
-  position: absolute;
-  background-image: linear-gradient(
-    to right,
-    #000,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0)
-  );
-  left: 0;
-  height: 100%;
-  width: 5rem;
-}
-
-.fade-side-right {
-  position: absolute;
-  background-image: linear-gradient(
-    to left,
-    #000,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0)
-  );
-  right: 0;
-  height: 100%;
-  width: 5rem;
 }
 
 .navigation {
@@ -105,12 +61,17 @@ a {
   width: 100%;
   height: 3px;
   border-radius: 9rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.15s ease-in-out;
   transform: scaleX(0);
 }
 
 .nav-links .nav-item:hover::after {
   transform: scale(1);
+}
+
+.nav-links a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .nav-links .login-btn {
@@ -128,114 +89,168 @@ a {
 }
 
 /* MAIN */
-
 .main {
   height: calc(100vh - 10.2rem);
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
-.text_container {
-  width: max-content;
-  height: max-content;
-  margin-left: 6rem;
-  margin-bottom: 8rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3.6rem;
-}
-
-/* TITLE */
-.title-text {
-  color: #fff;
-  text-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
-  font-weight: 400;
-  font-size: 4.4rem;
-  font-family: "Finger Paint", sans-serif;
-
-  border-right: solid 3px var(--color-brand--1);
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Animation */
-.title-text {
-  animation: animated-text 3s steps(29, end) 1s 1 normal both,
-    animated-cursor 600ms steps(29, end) infinite;
-}
-
-/* text animation */
-@keyframes animated-text {
-  from {
-    width: 0;
-  }
-  to {
-    width: 65rem;
-  }
-}
-
-/* cursor animations */
-@keyframes animated-cursor {
-  from {
-    border-right-color: var(--color-brand--1);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
-.explore-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transform: translateY(2rem);
-  transition: opacity 0.5s ease, transform 0.5s ease, color 0.2s,
-    background-color 0.3s, box-shadow 0.3s;
-  width: 20rem;
-  height: 6rem;
-  font-size: 2.2rem;
-  font-family: inherit;
-  border: none;
-  color: #e6e6e6;
-  background-color: var(--color-brand--darker);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
-  border-radius: 0.6rem;
-  cursor: pointer;
-}
-
-.explore-btn.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.explore-btn:hover {
-  color: #fff;
-  background-color: var(--color-brand--1);
-  box-shadow: 0px 0px 12px 2px var(--color-brand--1);
-}
-
-/* FOOTER */
-
-.fade {
+.fade-top {
   position: absolute;
-  top: -4rem;
+  background-image: linear-gradient(
+    to bottom,
+    #000,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+  top: 0;
+  height: 16rem;
+  width: 100%;
+  z-index: 3;
+}
+
+.fade-side-left {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    #000,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  );
   left: 0;
+  height: 100%;
+  width: 16rem;
+  z-index: 3;
+}
+
+.fade-side-right {
+  position: absolute;
+  background-image: linear-gradient(
+    to left,
+    #000,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+  right: 0;
+  height: 100%;
+  width: 16rem;
+  z-index: 3;
+}
+
+.fade-bottom {
+  position: absolute;
   background-image: linear-gradient(
     to top,
     #000,
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0)
   );
-  height: 4rem;
+  bottom: 0;
+  height: 16rem;
+  width: 100%;
+  z-index: 3;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  margin-top: 2rem;
+}
+
+.carousel {
+  height: 100%;
   width: 100%;
 }
 
+.carousel-item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.carousel-item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item p {
+  position: absolute;
+  bottom: 6rem;
+  left: 8rem;
+  font-size: 4rem;
+  font-weight: 500;
+  font-style: italic;
+  background-color: var(--color-dark--0-opacity);
+  padding: 1rem 2.6rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px;
+  border-radius: 1.2rem;
+  color: #fff;
+}
+
+.btn-carousel {
+  position: absolute;
+  background: none;
+  border: none;
+  z-index: 4;
+  background-color: var(--color-dark--0-opacity);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+  border-radius: 0.6rem;
+}
+
+.carousel-container:hover .btn-carousel {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.btn-carousel ion-icon {
+  color: var(--color-light--0);
+  font-size: 3.4rem;
+  padding: 0.6rem 1.1rem 0.6rem 0.8rem;
+  transition: all 0.2s;
+}
+
+.btn-carousel .left {
+  padding: 0.6rem 1.1rem 0.6rem 0.8rem;
+}
+
+.btn-carousel .right {
+  padding: 0.6rem 0.8rem 0.6rem 1.1rem;
+}
+
+.btn-carousel:hover ion-icon {
+  color: var(--color-light--2);
+}
+
+.btn-carousel:hover {
+  background-color: var(--color-dark--1);
+  opacity: 1;
+}
+
+.prev-btn {
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next-btn {
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* FOOTER */
 .footer {
   background-color: #000;
+  border-top: 2px solid var(--color-dark--2);
   width: 100%;
   padding: 10rem 4rem;
+
   position: relative;
 
   display: flex;

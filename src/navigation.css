@@ -1,0 +1,87 @@
+/* Copy All */
+
+/* NAVIGATION */
+.container {
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 82px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0 40px;
+  z-index: 3;
+}
+
+.logo {
+  height: 120px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  font-size: 18px;
+}
+
+.nav-links .nav-item {
+  font-size: 18px;
+  color: var(--color-light--3);
+  width: max-content;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.nav-links .nav-item:hover {
+  color: #fff;
+}
+
+.nav-links .nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  box-shadow: rgba(240, 46, 170, 0.8) 0px 5px, rgba(240, 46, 170, 0.4) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px;
+
+  width: 100%;
+  height: 3px;
+  border-radius: 90px;
+  transition: all 0.15s ease-in-out;
+  transform: scaleX(0);
+}
+
+.nav-links .nav-item:hover::after {
+  transform: scale(1);
+}
+
+.nav-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-links .login-btn {
+  background-color: #000;
+  color: var(--color-light--3);
+  padding: 8px 18px;
+  transition: all 0.3s;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-links .login-btn:hover {
+  background-color: var(--color-brand--1);
+  color: #fff;
+}
