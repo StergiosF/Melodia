@@ -1,0 +1,122 @@
+/* Copy All */
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  border-top: 2px solid var(--color-dark--2);
+  width: 100%;
+  padding: 100px 40px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-items_container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  column-gap: 60px;
+  margin: 0 auto;
+}
+
+.brand_container {
+  width: 200px;
+  position: relative;
+}
+
+.logo-footer {
+  position: absolute;
+  top: -38px;
+  height: 120px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  position: absolute;
+  top: 70px;
+}
+
+.social svg {
+  fill: var(--color-light--1);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.social svg:hover {
+  fill: var(--color-light--3);
+}
+
+.footer ion-icon {
+  font-size: 22px;
+  color: var(--color-light--1);
+  transition: all 0.3s;
+}
+
+.footer ion-icon:hover {
+  color: var(--color-light--3);
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--color-light--1);
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-address-column {
+  width: 220px;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.address {
+  font-size: 16px;
+  color: var(--color-light--1);
+  margin-bottom: 24px;
+}
+
+.footer-heading {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-light--3);
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.footer-heading ion-icon {
+  font-size: 20px;
+  color: var(--color-light--1);
+}
+
+.footer-nav-column {
+  width: 200px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 24px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--color-light--1);
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--color-light--3);
+}

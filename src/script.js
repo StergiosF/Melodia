@@ -19,19 +19,59 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
 let currentIndex = 0;
+const lastIndex = carouselItems.length - 1;
+
+let intervalId;
+function startCarousel() {
+  intervalId = setInterval(() => {
+    handleNext();
+  }, 2800);
+}
+
+function stopCarousel() {
+  clearInterval(intervalId);
+}
+
+startCarousel();
+
+function handleNext() {
+  stopCarousel();
+  currentIndex++;
+  if (currentIndex > lastIndex) {
+    currentIndex = 0;
+    carouselItems.forEach((item, index) => {
+      item.style.opacity = index === 0 ? "1" : "0";
+    });
+  } else {
+    carouselItems[currentIndex - 1].style.opacity = "0";
+    carouselItems[currentIndex].style.opacity = "1";
+  }
+  setTimeout(startCarousel(), 2500);
+}
+
+function handleBack() {
+  stopCarousel();
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = lastIndex;
+    carouselItems.forEach((item, index) => {
+      item.style.opacity = index === lastIndex ? "1" : "0";
+    });
+  } else {
+    carouselItems[currentIndex + 1].style.opacity = "0";
+    carouselItems[currentIndex].style.opacity = "1";
+  }
+  setTimeout(startCarousel(), 2800);
+}
 
 carouselItems.forEach((item, index) => {
   item.style.opacity = index === 0 ? "1" : "0";
 });
 
 prevBtn.addEventListener("click", () => {
-  currentIndex--;
-  carouselItems[currentIndex + 1].style.opacity = "0";
-  carouselItems[currentIndex].style.opacity = "1";
+  handleBack();
 });
 
 nextBtn.addEventListener("click", () => {
-  currentIndex++;
-  carouselItems[currentIndex - 1].style.opacity = "0";
-  carouselItems[currentIndex].style.opacity = "1";
+  handleNext();
 });
