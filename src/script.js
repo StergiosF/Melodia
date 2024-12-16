@@ -32,7 +32,7 @@ function stopCarousel() {
   clearInterval(intervalId);
 }
 
-startCarousel();
+// startCarousel();
 
 function handleNext() {
   stopCarousel();
@@ -41,6 +41,7 @@ function handleNext() {
     currentIndex = 0;
     carouselItems.forEach((item, index) => {
       item.style.opacity = index === 0 ? "1" : "0";
+      item.style.pointerEvents = index === 0 ? "all" : "none";
     });
   } else {
     carouselItems[currentIndex - 1].style.opacity = "0";
