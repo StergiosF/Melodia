@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+body {
+    background-image: url('careerspagepictures/background1.jpg');
+    background-position: center;
+    height: 100vh;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction:center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.join-Melodia {
+    margin: 0px;
+}
+
+button {
+    margin-top: 15px;
+    border: none;
+    padding: 10px 15px;
+    width: 150px;
+    border: 2px solid color(black);
+    border-radius: 6px;
+    background-color: #99196a;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #c22187;
+    color: rgb(255, 255, 255);
+}

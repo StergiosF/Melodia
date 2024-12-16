@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+
+body {
+    background-image: url('helpcenterpictures/background1.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 100vh; 
+  color: white; 
+    font-family: "Parkinsans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+button {
+    margin-top: 40px;
+    border: none;
+    padding: 10px 15px;
+    width: 150px;
+    border: 2px solid color(black);
+    border-radius: 6px;
+    background-color: #99196a;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #c22187;
+    color: rgb(255, 255, 255);
+}
+
+.bullets {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+.section {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 8px;
+}
+
+.section ul li a {
+    text-decoration: none;
+    color: #99196a; 
+    font-weight: 500;
+}
+
+.section ul li a:hover {
+    text-decoration: underline;
+}
+
+button {
+    align-self: center; 
+}
+
+
+
+
+.title {
+    backdrop: #99196a;
+    backdrop-filter: blur(37px);
+    opacity: 60;
+    text-align: center;
+    position: sticky;
+}
+
