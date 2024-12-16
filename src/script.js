@@ -32,7 +32,7 @@ function stopCarousel() {
   clearInterval(intervalId);
 }
 
-// startCarousel();
+startCarousel();
 
 function handleNext() {
   stopCarousel();
@@ -41,11 +41,14 @@ function handleNext() {
     currentIndex = 0;
     carouselItems.forEach((item, index) => {
       item.style.opacity = index === 0 ? "1" : "0";
-      item.style.pointerEvents = index === 0 ? "all" : "none";
+      item.style.zIndex = index === 0 ? "2" : "1";
     });
   } else {
     carouselItems[currentIndex - 1].style.opacity = "0";
     carouselItems[currentIndex].style.opacity = "1";
+
+    carouselItems[currentIndex - 1].style.zIndex = "1";
+    carouselItems[currentIndex].style.zIndex = "2";
   }
   setTimeout(startCarousel(), 2500);
 }
@@ -57,16 +60,21 @@ function handleBack() {
     currentIndex = lastIndex;
     carouselItems.forEach((item, index) => {
       item.style.opacity = index === lastIndex ? "1" : "0";
+      item.style.zIndex = index === lastIndex ? "2" : "1";
     });
   } else {
     carouselItems[currentIndex + 1].style.opacity = "0";
     carouselItems[currentIndex].style.opacity = "1";
+
+    carouselItems[currentIndex + 1].style.zIndex = "1";
+    carouselItems[currentIndex].style.zIndex = "2";
   }
   setTimeout(startCarousel(), 2800);
 }
 
 carouselItems.forEach((item, index) => {
   item.style.opacity = index === 0 ? "1" : "0";
+  item.style.zIndex = index === 0 ? "2" : "1";
 });
 
 prevBtn.addEventListener("click", () => {
