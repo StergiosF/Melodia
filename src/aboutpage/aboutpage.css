@@ -29,11 +29,11 @@ body {
 
 
 .content > div {
-    background-color:black;
-    color:whitesmoke;
+    background:whitesmoke;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.8);
+    color:black;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     line-height: 1.6;
 }
 
