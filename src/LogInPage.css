@@ -29,15 +29,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
     width: 300px;
+    position: relative;
   }
   
-  /* Logo */
   .logo img {
     width: 80px;
-    padding-top: 30px;
+    margin-bottom: 20px;
   }
   
-  /* Input Fields */
   .input-group {
     margin: 15px 0;
     text-align: left;
@@ -57,7 +56,6 @@
     font-size: 16px;
   }
   
-  /* Checkbox */
   .checkbox {
     display: flex;
     align-items: center;
@@ -73,17 +71,17 @@
   .login-button {
     width: 100%;
     padding: 10px;
-    background-color: rgb(107, 78, 255);
+    background-color: var(--color-brand--darker);
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
   }
   
   .login-button:hover {
-    background-color: rgb(91, 64, 226);
+    background-color: var(--color-brand--1);
   }
   
   /* Password Recovery */
@@ -109,5 +107,28 @@
 
   .SignUp:hover{
     text-decoration: underline;
+  }
+
+  .BackToHomepageBtn{
+    position: absolute;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    background: none;
+    transition: all 0.2s;
+    z-index: 3;
+    left: 5px;
+    top: 5px;  
+  }
+
+  .BackToHomepageBtn ion-icon{
+    font-size: 22px;
+  }
+
+  .BackToHomepageBtn:hover{
+    background-color: var(--color-light--1);
+    cursor: pointer;
   }
   
