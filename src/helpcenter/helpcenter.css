@@ -7,7 +7,8 @@ body {
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;  
-  color: white; 
+  color: white;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.8); 
     font-family: "Parkinsans", sans-serif;
 }
 
