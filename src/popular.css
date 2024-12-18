@@ -90,7 +90,7 @@ html {
 
 /* MAIN */
 .main {
-  height: calc(100vh - 10.2rem);
+  height: calc(100vh - 12.2rem);
 }
 
 .fade-top {
@@ -247,6 +247,36 @@ html {
   right: 2rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.events_container {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.event-btn {
+  width: 11%;
+  height: 55%;
+  opacity: 0.5;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.event-btn:hover {
+  opacity: 0.7;
+}
+
+.event-btn img {
+  border-radius: 0.8rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
 }
 
 /* FOOTER */
