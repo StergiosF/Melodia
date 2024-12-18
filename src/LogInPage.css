@@ -4,11 +4,12 @@ a {
  }
 
   .background {
-    background: url('/images/carousel/jodie-walton-thm-jF3JR3w-unsplash.jpg')no-repeat center center/cover;
+    background: url(/images/BgpLoginPage.jpg)no-repeat center center/cover;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.9;
   }
   /* FOOTER-FADE */
   .fade {
@@ -54,15 +55,15 @@ a {
   .login-container {
     background: rgba(255, 255, 255, 0.85);
     padding: 30px 40px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
-    width: 550px;
+    width: 600px;
     position: relative;
   }
   
   .logo img {
-    width: 80px;
+    width: 120px;
     margin-bottom: 20px;
   }
   
@@ -118,8 +119,10 @@ a {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s;
+    margin-top: 50px;
   }
   
   .login-button:hover {
