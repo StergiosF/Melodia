@@ -57,7 +57,7 @@ a {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
-    width: 350px;
+    width: 550px;
     position: relative;
   }
   
@@ -90,10 +90,23 @@ a {
     align-items: center;
     margin-bottom: 20px;
     font-size: 14px;
+    color: black;
   }
   
   .checkbox input {
     margin-right: 10px;
+  }
+
+  .alligncheck {
+    display: flex;
+    justify-content: space-between;    
+    gap: 5px;
+    font-size: 14px;
+    color: var(--color-brand--1);
+  }
+
+  .alligncheck:hover a{
+    text-decoration: underline;
   }
   
   /* Button */
@@ -113,29 +126,26 @@ a {
     background-color: var(--color-brand--1);
   }
   
-  /* Password Recovery */
-  .recovery {
+  /* Password SignUp */
+  .SignUp{
     margin-top: 10px;
   }
   
-  .recovery{
-    color: rgb(107, 78, 255);
+  .SignUp{
+    display:  flex;
+    justify-content:center;
+    gap: 10px;
+    color: var(--color-brand--1);
     text-decoration: none;
     font-size: 14px;
   }
   
-  .recovery a:hover {
+  .SignUp a:hover {
     text-decoration: underline;
   }
 
-  .SignUp{
-    color: rgb(107, 78, 255);
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-  .SignUp:hover{
-    text-decoration: underline;
+  .SignUp p{
+    color: black;
   }
 
   .BackToHomepageBtn{
@@ -147,13 +157,12 @@ a {
     border-radius: 50%;
     background: none;
     transition: all 0.2s;
-    z-index: 3;
     left: 5px;
     top: 5px;  
   }
 
   .BackToHomepageBtn ion-icon{
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .BackToHomepageBtn:hover{
