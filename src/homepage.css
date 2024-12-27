@@ -107,6 +107,7 @@ a {
   border-radius: 9rem;
   transition: all 0.2s ease-in-out;
   transform: scaleX(0);
+  
 }
 
 .nav-links .nav-item:hover::after {
@@ -144,6 +145,58 @@ a {
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
+}
+
+/* CONTACT BUTTON */
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 4rem;
+  right: 6rem;
+  width: max-content;
+
+  border-radius: 5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 3;
+}
+
+.contact-btn:hover {
+  background-color: var(--color-brand--1);
+}
+
+.contact-btn:hover span {
+  pointer-events: all;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact-btn span {
+  pointer-events: none;
+  font-size: 1.6rem;
+  opacity: 0;
+  color: #fff;
+  transform: translateX(1rem);
+  transition: all 0.3s;
+  padding-left: 1.6rem;
+}
+
+.contact-btn ion-icon {
+  fill: var(--color-light--3);
+  font-size: 3rem;
+  transition: all 0.3s;
+
+  background-color: var(--color-brand--1);
+  border-radius: 5rem;
+  padding: 1rem 1.6rem;
+}
+
+.contact-btn:hover ion-icon {
+  fill: #fff;
 }
 
 /* TITLE */
