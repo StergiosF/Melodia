@@ -105,19 +105,17 @@ a {
 /* MAIN */
 
 .main {
-  height: calc(100vh - 18rem);
+  height: calc(100vh - 10.2rem);
   position: relative;
-  margin-bottom: 4rem;
 }
 
 .artists_section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
   width: 100%;
-  margin-top: 4rem;
-  padding: 0 2rem;
+  height: 40rem;
+  margin-top: 3.6rem;
 }
 
 .artist_container {
@@ -125,20 +123,17 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 6.2rem;
-  height: auto;
-  padding: 2.8rem 0;
-  width: 28rem;
-  max-width: 28rem;
-  min-width: 15rem;
+  gap: 8rem;
+  height: 100%;
+  width: 30rem;
   border-radius: 1.2rem;
   transition: all 0.2s;
   cursor: pointer;
 }
 
 .artist-cover {
-  height: 20rem;
-  width: 20rem;
+  height: 22rem;
+  width: 22rem;
   transition: all 0.2s;
 }
 
@@ -153,11 +148,10 @@ a {
 
 .artist-name {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   font-style: italic;
   transition: all 0.3s;
-  text-align: center;
 }
 
 .artist_container:hover {

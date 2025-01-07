@@ -6,9 +6,7 @@
   border-top: 2px solid var(--color-dark--2);
   width: 100%;
   padding: 100px 40px;
-
   position: relative;
-
   display: flex;
   align-items: center;
 }
