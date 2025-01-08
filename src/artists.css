@@ -104,20 +104,80 @@ a {
 
 /* MAIN */
 
-.main {
-  height: calc(100vh - 18rem);
-  position: relative;
-  margin-bottom: 4rem;
+.fade-side-left {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    #000,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+  left: 0;
+  height: 100%;
+  width: 42rem;
+  z-index: 3;
+  pointer-events: none;
 }
 
+.fade-side-right {
+  position: absolute;
+  background-image: linear-gradient(
+    to left,
+    #000,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+  right: 0;
+  height: 100%;
+  width: 42rem;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.main {
+  min-height: calc(100vh - 14.2rem);
+  max-height: max-content;
+  position: relative;
+  margin-bottom: 4rem;
+  overflow-x: hidden;
+}
+
+/* Scroller */
+.scroller {
+  margin-top: 2.4rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.25rem));
+  }
+}
+
+.scroller[data-animated="true"] .scroller__inner:hover {
+  animation-play-state: paused;
+}
+
+/* Artist Section */
 .artists_section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2rem;
+  align-items: center;
+  gap: 1.2rem;
   width: 100%;
-  margin-top: 4rem;
-  padding: 0 2rem;
+  height: 40rem;
+  user-select: none;
+  padding: 0 0.4rem;
 }
 
 .artist_container {
@@ -126,7 +186,6 @@ a {
   align-items: center;
   flex-direction: column;
   gap: 6.2rem;
-  height: auto;
   padding: 2.8rem 0;
   width: 28rem;
   max-width: 28rem;
