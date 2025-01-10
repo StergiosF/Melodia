@@ -1,0 +1,112 @@
+.background {
+    background: url(/images/BgpLoginPage.jpg)no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+  }
+
+/* Styles for the content area */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background to contrast with navigation and footer */
+    color: #333; /* Text color for readability */
+}
+
+/* Left section styling */
+.left-section {
+    max-width: 45%;
+}
+
+.left-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222; /* Slightly darker for emphasis */
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.left-section span {
+    color: #7e57c2; /* Accent color to match navigation/footer */
+}
+
+.email-link {
+    font-size: 1.1rem;
+    color: #7e57c2;
+    text-decoration: none;
+    border-bottom: 2px solid #7e57c2;
+    padding-bottom: 2px;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.email-link:hover {
+    color: #5c41a8;
+    border-color: #5c41a8;
+}
+
+/* Right section styling */
+.right-section {
+    max-width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.right-section span {
+    color: #7e57c2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #7e57c2;
+    box-shadow: 0 0 5px rgba(126, 87, 194, 0.5);
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #7e57c2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #5c41a8;
+}

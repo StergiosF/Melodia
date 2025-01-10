@@ -53,13 +53,13 @@ a {
   }
   
   .login-container {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
     padding: 30px 40px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     text-align: center;
     width: 600px;
-    position: relative;
   }
   
   .logo img {
@@ -165,10 +165,10 @@ a {
   }
 
   .BackToHomepageBtn ion-icon{
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .BackToHomepageBtn:hover{
-    background-color: var(--color-light--1);
+    background-color: rgba(255, 255, 255, 0.25);
     cursor: pointer;
   }
