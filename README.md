@@ -6,7 +6,7 @@ Melodia is a music platform designed to help users discover festivals, concerts,
 
 Deployed Website: [https://melodia-athtech.netlify.app](https://melodia-athtech.netlify.app)  
 
-[![Melodia Homepage Preview](./images/melodia-preview.png)](https://melodia-athtech.netlify.app)
+[![Melodia Homepage Preview](.src/images/melodia-preview.png)](https://melodia-athtech.netlify.app)
 
 ## Website Features
 
