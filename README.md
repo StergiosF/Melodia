@@ -1,12 +1,12 @@
 # 🎵 Melodia  
 
-Melodia is a music platform designed to help users discover festivals, concerts, and artists. It provides an intuitive and visually appealing experience for music lovers, making it easy to stay connected to the music scene.  
+Melodia is a music platform designed to help users discover festivals, concerts, and artists. It provides an intuitive and visually appealing experience for music lovers, making staying connected to the music scene easy.  
 
 ## Deployment  
 
 Deployed Website: [https://melodia-athtech.netlify.app](https://melodia-athtech.netlify.app)  
 
-[![Melodia UI/UX Preview](./src/festivals_ui_ux.png)](https://melodia-athtech.netlify.app)  
+[![Melodia Preview](./melodia.png)](https://melodia-athtech.netlify.app)  
 
 ## Built With  
 
@@ -16,7 +16,7 @@ Deployed Website: [https://melodia-athtech.netlify.app](https://melodia-athtech.
 
 ## Getting Started  
 
-To get started with the project, simply clone this repository or fork it to your own GitHub account.  
+To start the project, clone this repository or fork it to your GitHub account.  
 
 ### Prerequisites  
 
