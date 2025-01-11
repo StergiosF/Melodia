@@ -16,13 +16,7 @@ Deployed Website: [https://melodia-athtech.netlify.app](https://melodia-athtech.
 
 ## Getting Started  
 
-To start the project, clone this repository or fork it to your GitHub account.  
-
-### Prerequisites  
-
-Ensure you have the following installed on your system:  
-- A modern web browser (e.g., Chrome, Firefox, Edge)  
-- A code editor, such as [VSCode](https://code.visualstudio.com/)  
+To start the project, fork this repository or download it locally on your System.
 
 ### Steps to Run Locally  
 
