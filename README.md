@@ -6,7 +6,35 @@ Melodia is a music platform designed to help users discover festivals, concerts,
 
 Deployed Website: [https://melodia-athtech.netlify.app](https://melodia-athtech.netlify.app)  
 
-[![Melodia Preview](./images/melodia.png)](https://melodia-athtech.netlify.app)  
+[Melodia Homepage Preview](/images/melodia-preview.png)
+
+
+
+## Website Features
+
+- **Homepage**: Entry point with an overview of festivals and key sections.  
+- **Popular Section**: Highlights trending festivals and concerts.  
+- **Festivals & Concerts Pages**: Detailed information about various events.  
+- **Artists Section**: Showcases profiles of featured artists.  
+- **Footer Links**:  
+  - Contact Us  
+  - FAQ  
+  - About Melodia  
+  - Help Center  
+  - Blog  
+  - Terms of Service  
+  - Careers  
+
+## Contribution  
+
+This project was developed by:  
+
+- **Στέργιος Φώτογλου**: Homepage layout, navigation, footer, "Popular" page, and "Artists" page.  
+- **Παναγιώτης Χολόγκιτας**: "Sign In", "Contact Us", and concert/festival pages.  
+- **Ελευθέριος Μάριος Κυριακάκης**: "Terms of Service", "Blog", and festival pages.  
+- **Γρηγόριος Γρηγορόπουλος**: "FAQ" and concert/festival pages.  
+- **Τρύφωνας Γαβρίλης**: "Help Center", "About Melodia", "Careers", and event pages.  
+
 
 ## Built With  
 
@@ -21,6 +49,7 @@ To start the project, fork this repository or download it locally on your System
 ### Steps to Run Locally  
 
 1. Clone the repository:  
-   ```bash  
+```sh
    git clone https://github.com/your-username/melodia.git  
-   cd melodia  
+   cd melodia
+```
