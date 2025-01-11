@@ -8,7 +8,7 @@ body {
       rgba(0, 0, 0, 0.45),
       rgba(240, 46, 170, 0.15)
     ),
-    url("/images/danny-howe-bn-D2bCvpik-unsplash.jpg");
+    url("./images/danny-howe-bn-D2bCvpik-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -107,7 +107,6 @@ a {
   border-radius: 9rem;
   transition: all 0.2s ease-in-out;
   transform: scaleX(0);
-  
 }
 
 .nav-links .nav-item:hover::after {
