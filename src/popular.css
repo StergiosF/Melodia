@@ -206,6 +206,9 @@ html {
 
 .btn-carousel {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   z-index: 4;
