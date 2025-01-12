@@ -1,0 +1,44 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, black, purple);
+  height: max-content;
+}
+
+.nav-container {
+  padding: 20px;
+}
+
+section {
+  height: calc(100vh - 200px);
+  max-height: max-content;
+  max-width: 900px;
+  margin: 60px auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Content Section */
+.content {
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 20px;
+  height: max-content;
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #4d0dbb;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 25px;
+  color: #4d0dbb;
+}
