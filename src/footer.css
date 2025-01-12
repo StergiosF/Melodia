@@ -1,11 +1,10 @@
-/* Copy All */
-
 /* FOOTER */
 .footer {
   background-color: #000;
   border-top: 2px solid var(--color-dark--2);
   width: 100%;
-  padding: 100px 40px;
+  min-height: 40rem;
+  max-height: 40rem;
   position: relative;
   display: flex;
   align-items: center;
