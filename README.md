@@ -30,7 +30,7 @@ This project was developed by:
 - **Στέργιος Φώτογλου**: Homepage layout, navigation, footer, "Popular" page, and "Artists" page.  
 - **Παναγιώτης Χολόγκιτας**: "Sign In", "Contact Us", and concert/festival pages.  
 - **Ελευθέριος Μάριος Κυριακάκης**: "Terms of Service", "Blog", and festival pages.  
-- **Γρηγόριος Γρηγορόπουλος**: "FAQ" and concert/festival pages.  
+- **Γρηγόριος Γρηγορόπουλος**:" FAQ" and concert/festival pages.  
 - **Τρύφωνας Γαβρίλης**: "Help Center", "About Melodia", "Careers", and event pages.  
 
 
