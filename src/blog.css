@@ -14,6 +14,10 @@ body {
   height: 100vh;
 }
 
+.nav-container {
+  padding: 20px;
+}
+
 /* Blog post styles */
 .blog-post {
   padding: 30px;
