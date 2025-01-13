@@ -1,8 +1,14 @@
 /* GLOBAL STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+
 body {
+    background: url(careerspagepictures/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: "Parkinsans", sans-serif;
+    color: #99196a;
 }
 
 /* NAVIGATION */
@@ -23,7 +29,7 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(6.2px);
     -webkit-backdrop-filter: blur(6.2px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border:#99196a;
     padding: 0 40px;
     z-index: 3;
 }
