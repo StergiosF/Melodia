@@ -38,6 +38,15 @@ body {
     height: 120px;
 }
 
+.join-Melodia {
+  color: white;
+}
+
+.why-Melodia {
+  color: white;
+}
+
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -109,12 +118,13 @@ body {
 .job-listing {
     text-align: center;
     margin: 20px 0;
+    color:white
 }
 
 .job-box {
     background-color: white;
     color: #333;
-    border-radius: 8px;
+    border-radius: 100px;
     padding: 20px;
     margin: 10px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
