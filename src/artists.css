@@ -200,13 +200,15 @@ a {
   border-radius: 1.4rem;
   padding: 1.4rem;
   transition: all 0.3s;
-  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .item:hover {
   background-color: #1b1b1f;
-  box-shadow: rgba(194, 33, 135, 0.6) 0px 0px 20px 0px;
+  box-shadow: rgba(194, 33, 135, 0.6) 0px 0px 14px 0px;
   transform: scale(1.009);
 }
 
@@ -226,9 +228,13 @@ a {
   transition: all 0.3s;
 }
 
+.item-info {
+  min-height: 18rem;
+}
+
 .item-name {
   color: var(--color-light--2);
-  margin-top: 7.2rem;
+  margin-top: 6.2rem;
   font-size: 1.8rem;
   font-weight: 600;
   display: flex;
@@ -237,6 +243,32 @@ a {
 
 .item-description {
   color: var(--color-light--2);
-  margin-top: 2rem;
+  margin-top: 1.8rem;
   font-size: 1.6rem;
+}
+
+.item-btn {
+  margin-top: 3.2rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  background-color: var(--color-brand--darker);
+  color: var(--color-light--3);
+  border-radius: 0.6rem;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  opacity: 0;
+  transform: translateY(0.8rem);
+}
+
+.item-btn:hover {
+  color: #fff;
+  background-color: var(--color-brand--1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+.item:hover .item-btn {
+  opacity: 1;
+  transform: translateY(0);
 }
