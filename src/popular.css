@@ -206,6 +206,9 @@ html {
 
 .btn-carousel {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   z-index: 4;
@@ -269,11 +272,15 @@ html {
 
 .event-btn {
   width: 12%;
-  height: 55%;
+  max-height: 55%;
   opacity: 0.3;
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+
+  object-fit: cover;
+  overflow: hidden;
+  overflow-clip-margin: unset;
 }
 
 .event-btn:hover {

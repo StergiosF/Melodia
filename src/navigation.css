@@ -67,6 +67,15 @@
   transform: scale(1);
 }
 
+.nav-links .active-nav {
+  color: #f02ea9;
+  font-weight: 500;
+}
+
+.nav-links .active-nav:hover {
+  color: #f02ea9;
+}
+
 .nav-links a {
   color: inherit;
   text-decoration: none;
