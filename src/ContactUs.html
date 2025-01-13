@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="navigation.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="/src/ContactUs.css">
+    <link rel="stylesheet" href="ContactUs.css">
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -18,7 +18,7 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <div class="container">
+    <div class="NavContainer">
       <nav class="navigation">
         <a href="homepage.html">
           <img class="logo" src="./images/logo-full.png" alt="logo" />
@@ -37,54 +37,64 @@
           </li>
         </ul>
       </nav>
-      <main class="main">
-      <div class="ContactForm">
-        <div class="ContactInfo">
-          <input class="EmailAdressBox"
-          style="color:white"
+    </div>
+    <main>
+      <div class="ContactUsBackgroundPic">
+        <img src="/src/images/ContactUs.jpg" alt="ContactUsBackgroundPic">        
+      </div>
+      <div class="InfoContainer">
+      <div class="ContactUs">
+       <p><h1>Contact Us!</h1></p>
+       <p>We value your interest and involvement. Whether you have questions, need support, or want to get more involved, we're here to help. Below are the ways you can reach out to us directly or stay connected through our updates.</p>
+      </div>
+      <div class="FormContainer">
+        <div class="InputValues">
+          <label for="email">Email :</label>
+          <input 
           type="email"
-          placeholder="E-mail address"
+          placeholder="Enter your Email"
           id="email"
           required
           >
-              <input class="NameBox"
-              style="color: white;"
-              placeholder="Enter your name" 
-              type="text"
-              id="name"
-              required
-              >
-            </div>
-            <div class="ContactInfo2">
-              <input class="AddressBox"
-              style="color:white"
-              type="text"
-              id="address"
-              placeholder="Enter your address"
-              required
-              > 
-          <input class="PhoneNumberBox"
-          style="color:white"
+          </div>
+          <div class="InputValues">
+          <label for="name">Name :</label>
+          <input 
           type="text"
-          placeholder="Enter your phone number"
-          id="4166"
+          placeholder="Enter your Name"
+          id="name"
           required
           >
-          
-      </div>
-      <div class="MessageInfo">
-          <input class="MessageBox"
-          style="color:white"
+        </div>
+        <div class="InputValues">
+          <label for="name">Name :</label>
+          <input 
           type="text"
-          placeholder="Enter your message"
+          placeholder="Enter your Name"
+          id="name"
           required
           >
+        </div>
+        <div class="InputValues">
+          <label for="name">Name :</label>
+          <input 
+          type="text"
+          placeholder="Enter your Name"
+          id="name"
+          required
+          >
+        </div>
+        <div class="MessageBox">
+          <label for="name">Name :</label>
+          <input 
+          type="text"
+          placeholder="Enter your Name"
+          id="name"
+          required
+          >
+        </div>
       </div>
     </div>
-    <div class="GeneralInfo">
-      <div class="Title">
-        <h2 style="color: white;">Contact Us!</h2>
-      </div>
     </main>
     </div>
         <footer class="footer">
