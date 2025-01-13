@@ -3,7 +3,7 @@ a {
   text-decoration: none;
 }
 
-.main{
+.main {
   height: auto;
   width: 100%;
   display: flex;
@@ -11,8 +11,8 @@ a {
   justify-content: top;
 }
 
-.ContactUsBackgroundPic{
-  background: url('/src/images/ContactUs.jpg') no-repeat center center/cover;
+.ContactUsBackgroundPic {
+  background: url("./images/ContactUs.jpg") no-repeat center center/cover;
   height: 100%;
   width: 100%;
   display: flex;
@@ -21,30 +21,30 @@ a {
   opacity: 0.1;
 }
 
-.NavContainer{
+.NavContainer {
   padding: 20px;
 }
 
- .ContactUs{
+.ContactUs {
   color: white;
   text-align: center;
   width: 800px;
-  }
-
-.FormContainer{
-  background:  #26051a;
-    backdrop-filter: blur(10px);
-    padding: 30px 40px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 12px 2px var(--color-brand--darker);
-    width: 600px;
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.InfoContainer{
+.FormContainer {
+  background: #26051a;
+  backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px 2px var(--color-brand--darker);
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.InfoContainer {
   position: absolute;
   left: 50%;
   top: 200px;
@@ -57,18 +57,18 @@ a {
   color: white;
 }
 
-.InputValues{
+.InputValues {
   display: flex;
   flex-direction: column;
 }
 
-.MessageBox{
+.MessageBox {
   width: 100%;
   border-color: white;
   padding-top: 100px;
 }
 
-.SubmitBtn{
+.SubmitBtn {
   background-color: #de2f9d4c;
   border-style: solid;
   border-radius: 5px;
@@ -81,8 +81,7 @@ a {
   transition: 0.2s;
 }
 
-.SubmitBtn:hover{
+.SubmitBtn:hover {
   color: white;
-  box-shadow: -2px 3px 0  #99196a23;
+  box-shadow: -2px 3px 0 #99196a23;
 }
-
