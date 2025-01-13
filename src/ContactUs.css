@@ -61,3 +61,28 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+.MessageBox{
+  width: 100%;
+  border-color: white;
+  padding-top: 100px;
+}
+
+.SubmitBtn{
+  background-color: #de2f9d4c;
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 12px 2px var(--color-brand--darker);
+  border-color: #de2f9d4c;
+  width: 120px;
+  height: 40px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.SubmitBtn:hover{
+  color: white;
+  box-shadow: -2px 3px 0  #99196a23;
+}
+
