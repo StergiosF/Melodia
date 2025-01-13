@@ -1,32 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
-
+/* GLOBAL STYLES */
 body {
-    background-image: url('careerspagepictures/background1.jpg');
-    background-position: center;
-    height: 100vh;
-    color: white;
-    font-family: "Parkinsans", sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
+/* NAVIGATION */
 .container {
-    display: flex;
-    flex-direction:center;
-    gap: 20px;
+    height: 100%;
+    position: relative;
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 82px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0 40px;
+    z-index: 3;
 }
 
-.join-Melodia {
-    margin: 0px;
+.logo {
+    height: 120px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.nav-links .nav-item {
+    font-size: 18px;
+    color: var(--color-light--3);
+    width: max-content;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.nav-links .nav-item:hover {
+    color: #fff;
+}
+
+.nav-links .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    box-shadow: rgba(240, 46, 170, 0.8) 0px 5px, rgba(240, 46, 170, 0.4) 0px 10px,
+        rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px;
+    width: 100%;
+    height: 3px;
+    border-radius: 90px;
+    transition: all 0.15s ease-in-out;
+    transform: scaleX(0);
+}
+
+.nav-links .nav-item:hover::after {
+    transform: scale(1);
+}
+
+.nav-links .active-nav {
+    color: #f02ea9;
+    font-weight: 500;
+}
+
+.nav-links .active-nav:hover {
+    color: #f02ea9;
+}
+
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-links .login-btn {
+    background-color: #000;
+    color: var(--color-light--3);
+    padding: 8px 18px;
+    transition: all 0.3s;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav-links .login-btn:hover {
+    background-color: var(--color-brand--1);
+    color: #fff;
+}
+
+/* JOB LISTING STYLES */
+.job-listing {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.job-box {
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.job-box:hover {
+    transform: scale(1.02);
 }
 
 button {
@@ -34,7 +124,6 @@ button {
     border: none;
     padding: 10px 15px;
     width: 150px;
-    border: 2px solid color(black);
     border-radius: 6px;
     background-color: #99196a;
     color: rgb(255, 255, 255);
@@ -48,6 +137,123 @@ button:hover {
     color: rgb(255, 255, 255);
 }
 
-.job-listing{
-    text-align: center;
-}
+
+.footer {
+    background-color: #000;
+    border-top: 2px solid var(--color-dark--2);
+    width: 100%;
+    padding: 100px 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+  }
+  
+  .footer-items_container {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    column-gap: 60px;
+    margin: 0 auto;
+  }
+  
+  .brand_container {
+    width: 200px;
+    position: relative;
+  }
+  
+  .logo-footer {
+    position: absolute;
+    top: -38px;
+    height: 120px;
+  }
+  
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    position: absolute;
+    top: 70px;
+  }
+  
+  .social svg {
+    fill: var(--color-light--1);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .social svg:hover {
+    fill: var(--color-light--3);
+  }
+  
+  .footer ion-icon {
+    font-size: 22px;
+    color: var(--color-light--1);
+    transition: all 0.3s;
+  }
+  
+  .footer ion-icon:hover {
+    color: var(--color-light--3);
+  }
+  
+  .copyright {
+    font-size: 12px;
+    color: var(--color-light--1);
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .footer-address-column {
+    width: 220px;
+  }
+  
+  .contacts {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .address {
+    font-size: 16px;
+    color: var(--color-light--1);
+    margin-bottom: 24px;
+  }
+  
+  .footer-heading {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-light--3);
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-heading ion-icon {
+    font-size: 20px;
+    color: var(--color-light--1);
+  }
+  
+  .footer-nav-column {
+    width: 200px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    gap: 24px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: var(--color-light--1);
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: var(--color-light--3);
+  }
+  
