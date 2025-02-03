@@ -27,11 +27,11 @@ Deployed Website: [https://melodia-athtech.netlify.app](https://melodia-athtech.
 
 This project was developed by:  
 
-- **Στέργιος Φώτογλου**: Homepage layout, navigation, footer, "Popular" page, and "Artists" page.  
-- **Παναγιώτης Χολόγκιτας**: "Sign In", "Contact Us", and specific details in concert/festival pages.  
-- **Ελευθέριος Μάριος Κυριακάκης**: "Terms of Service", "Blog", and specific details in festival pages.  
-- **Γρηγόριος Γρηγορόπουλος**: "FAQ" and specific details in concert/festival pages.  
-- **Τρύφωνας Γαβρίλης**: "Help Center", "About Melodia", "Careers", and specific details in event pages.  
+- **Stergios Fotoglou**: Homepage layout, navigation, footer, "Popular" page, and "Artists" page.  
+- **Panagiotis Chologkitas**: "Sign In", "Contact Us", and specific details on concert/festival pages.  
+- **Lefteris Kyriakakis**: "Terms of Service", "Blog", and specific details in festival pages.  
+- **Grigoris Grigoropoulos**: "FAQ" and specific details on concert/festival pages.  
+- **Tryfonas Gavrilis**: "Help Center", "About Melodia", "Careers", and specific details on event pages.  
 
 ## Built With  
 
